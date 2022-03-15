@@ -1,0 +1,34 @@
+@mixin footerEstilos {
+    padding: 20px 0px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    @media (max-width: $pointsm) {
+        font-size: 0.9rem;
+    }
+}
+
+@mixin transiHover {
+    transition: all 250ms ease-in-out;
+    transform: scale(1.1);
+}
+
+@mixin transiHoverMedia {
+    transition: all 250ms ease-in-out;
+    transform: scale(1.05);
+}
+
+@mixin fondoBaner {
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin contentBaner {
+    height: 70vh;
+    position: relative;
+    z-index: 2;
+    p:nth-child(1) {
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+}
+
